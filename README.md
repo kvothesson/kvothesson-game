@@ -1,9 +1,20 @@
 # AUSTRAL // PoC de movimiento — Kvothesson
 
+### ▶ Jugalo acá: **[kvothesson.github.io/kvothesson-game](https://kvothesson.github.io/kvothesson-game/)**
+
+Flechas o `A`/`D` para mover · `SHIFT` para correr · `ESPACIO` para saltar
+(mantenerlo salta más alto) · `F1` debug · `L` banco de sprites.
+
+---
+
 Prueba de concepto de un side-scroller 2D con Kvothesson. El foco está en dos
 cosas: que el **sprite sheet esté bien hecho** y que el **movimiento se sienta
 bien**. No hay enemigos, ni niveles, ni colisiones: solo el personaje, el piso
 y la cámara.
+
+Es parte del universo **AUSTRAL**, donde el folklore argentino y la tecnología
+post-singularidad colisionan. El fondo es la pampa de la Ruta 404: el campo
+tiene píxeles muertos, y no conviene mirarlos fijo.
 
 ```
 generate_sprites.py  ->  raw/*.png      23 frames sobre croma verde
