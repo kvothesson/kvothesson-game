@@ -1,0 +1,7 @@
+# Los 23 PNG crudos sobre croma: 11 MB y se regeneran con generate_sprites.py
+raw/
+
+# Nunca
+.env
+__pycache__/
+node_modules/

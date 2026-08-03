@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AUSTRAL // PoC de movimiento — Kvothesson</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; height: 100%; background: #06070d; overflow: hidden;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    color: #9fb4cc;
+  }
+  #wrap { position: relative; width: 100vw; height: 100vh; }
+  canvas { display: block; width: 100%; height: 100%; image-rendering: auto; }
+  #hud {
+    position: absolute; left: 14px; bottom: 12px; font-size: 12px;
+    letter-spacing: .04em; line-height: 1.7; pointer-events: none;
+    text-shadow: 0 1px 3px #000; opacity: .75;
+  }
+  #hud b { color: #ffd08a; font-weight: 600; }
+  #dbg {
+    position: absolute; right: 14px; top: 12px; font-size: 11px;
+    line-height: 1.6; white-space: pre; pointer-events: none;
+    text-shadow: 0 1px 3px #000; color: #7de3c8; display: none;
+  }
+  #err {
+    position: absolute; inset: 0; display: none; place-items: center;
+    text-align: center; padding: 40px; font-size: 14px; color: #ff9a9a;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="c"></canvas>
+  <div id="hud">
+    <b>&larr; &rarr;</b> / <b>A D</b> mover &nbsp;·&nbsp;
+    <b>SHIFT</b> correr &nbsp;·&nbsp;
+    <b>ESPACIO</b> saltar (mantener = mas alto) &nbsp;·&nbsp;
+    <b>F1</b> debug &nbsp;·&nbsp;
+    <b>L</b> banco de sprites
+  </div>
+  <div id="dbg"></div>
+  <div id="err"></div>
+</div>
+<script src="atlas.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
